@@ -1,0 +1,153 @@
+{
+  "users": [
+    {
+      "id": "usr-1",
+      "email": "client@mnprints.org",
+      "name": "Alex Johnson",
+      "companyName": "Twin Cities Coffee Co.",
+      "phone": "612-555-0199",
+      "password": "password123",
+      "isAdmin": false
+    },
+    {
+      "id": "usr-admin",
+      "email": "harmony.fundsfi@gmail.com",
+      "name": "MN Prints Admin",
+      "companyName": "MN Prints",
+      "phone": "612-286-3469",
+      "password": "adminpassword",
+      "isAdmin": true
+    }
+  ],
+  "quotes": [
+    {
+      "id": "QT-90321",
+      "userId": "usr-1",
+      "name": "Alex Johnson",
+      "company": "Twin Cities Coffee Co.",
+      "email": "client@mnprints.org",
+      "phone": "612-555-0199",
+      "productType": "Premium Cotton T-Shirts",
+      "quantity": 150,
+      "sizes": "S: 30, M: 50, L: 50, XL: 20",
+      "printingMethod": "Screen Printing",
+      "artworkName": "tccc_front_logo.png",
+      "deadline": "2026-07-10",
+      "additionalDetails": "Requesting 2-color soft-hand waterbase print on front pocket area and large logo on the back.",
+      "status": "approved",
+      "estimatedPrice": "$1,125.00",
+      "createdAt": "2026-06-25T14:32:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "MNP-52891",
+      "quoteId": "QT-90321",
+      "productName": "Twin Cities Coffee Custom Tees",
+      "quantity": 150,
+      "printingMethod": "Screen Printing",
+      "status": "shipped",
+      "trackingNumber": "MNP94738520US",
+      "carrier": "USPS Priority",
+      "estimatedDelivery": "2026-06-30",
+      "createdAt": "2026-06-26T09:00:00.000Z",
+      "milestones": [
+        {
+          "status": "submitted",
+          "label": "Order Submitted",
+          "description": "Your custom design specifications and sizing lists have been successfully logged.",
+          "date": "2026-06-25",
+          "completed": true
+        },
+        {
+          "status": "processing",
+          "label": "Artwork Approved & Processing",
+          "description": "Our pre-press design assistants verified tccc_front_logo.png is color-separated and ready for films.",
+          "date": "2026-06-26",
+          "completed": true
+        },
+        {
+          "status": "in_production",
+          "label": "In Production",
+          "description": "Screens burned and garments set on automatic presses. High-temp conveyor curing in progress.",
+          "date": "2026-06-26",
+          "completed": true
+        },
+        {
+          "status": "quality_check",
+          "label": "Quality Audit Passed",
+          "description": "Every garment passed visual count, alignment, ink cure test, and individual lint-roll check.",
+          "date": "2026-06-27",
+          "completed": true
+        },
+        {
+          "status": "shipped",
+          "label": "Shipped & Dispatched",
+          "description": "Boxed, labeled, and collected by USPS from our Minneapolis facility.",
+          "date": "2026-06-27",
+          "completed": true
+        },
+        {
+          "status": "delivered",
+          "label": "Out for Delivery",
+          "description": "Awaiting local carrier arrival in Minneapolis, MN.",
+          "date": "2026-06-30",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "MNP-38492",
+      "productName": "Gopher Athletic Hoodies",
+      "quantity": 75,
+      "printingMethod": "Embroidery",
+      "status": "in_production",
+      "createdAt": "2026-06-24T10:15:00.000Z",
+      "milestones": [
+        {
+          "status": "submitted",
+          "label": "Order Submitted",
+          "description": "Custom heavy-weight athletic fleece order logged with 3D puff embroidery selection.",
+          "date": "2026-06-24",
+          "completed": true
+        },
+        {
+          "status": "processing",
+          "label": "Embroidery Digitizing Approved",
+          "description": "High-fidelity DST format stitch-file digitized for multi-head embroidery rigs.",
+          "date": "2026-06-25",
+          "completed": true
+        },
+        {
+          "status": "in_production",
+          "label": "Stitching on Embroidery Heads",
+          "description": "Currently active on Tajima 15-needle embroidery rigs. Front chest shield and back custom names.",
+          "date": "2026-06-27",
+          "completed": true
+        },
+        {
+          "status": "quality_check",
+          "label": "Final Quality Audit",
+          "description": "Garments will undergo trimming, backing tear-away review, and heat press steaming.",
+          "date": "Pending",
+          "completed": false
+        },
+        {
+          "status": "shipped",
+          "label": "Shipped",
+          "description": "Tracking ID will populate once labels print from our shipping dock.",
+          "date": "Pending",
+          "completed": false
+        },
+        {
+          "status": "delivered",
+          "label": "Delivered",
+          "description": "Receipt confirmation.",
+          "date": "Pending",
+          "completed": false
+        }
+      ]
+    }
+  ],
+  "messages": []
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MN Prints",
+  "description": "Custom apparel manufacturing, screen printing, embroidery, and DTF printing services based in Minnesota.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
